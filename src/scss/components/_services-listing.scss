@@ -1,0 +1,43 @@
+.services-wrapper{
+    padding: 40px 50px;
+
+    .col-1{
+        margin-right: 50px;
+    }
+
+    .col-2{
+        width: 600px;
+        margin-right: 85px;
+    }
+
+    .col-3{
+        width: 450px;
+    }
+
+    &_items{
+        .d-flex{
+            text-decoration: none;
+            color: $white;
+            gap: 25px;
+            padding: 42px 30px;
+            border: 1px solid #FFFFFF12;
+            border-radius: 25px;
+            background-color: $black_2;
+
+            p{
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+
+            h4{
+                margin-bottom: 0;
+            }
+
+
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+}
