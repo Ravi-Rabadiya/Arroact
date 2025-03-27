@@ -66,6 +66,7 @@
 }
 .services-wrapper {
   padding: 40px 50px;
+  position: relative;
 }
 .services-wrapper .col-1 {
   margin-right: 50px;
@@ -172,6 +173,6 @@ p.small-text {
 }
 .svg-elem-1 {
   opacity: 0;
-  stroke: rgba(255, 255, 255, 0.5); /* Light white stroke */
-  stroke-width: 0.4; /* Make stroke thinner */
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 0.4;
 }/*# sourceMappingURL=style.css.map */
