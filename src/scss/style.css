@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Nohemi";
   src: url("fonts/Nohemi-Thin-BF6438cc577ef3b.otf") format("opentype");
@@ -65,11 +66,11 @@
   font-style: normal;
 }
 .services-wrapper {
-  padding: 40px 50px;
-  position: relative;
+  padding: 40px 0;
 }
 .services-wrapper .col-1 {
   margin-right: 50px;
+  max-width: 85px;
 }
 .services-wrapper .col-2 {
   width: 600px;
@@ -87,19 +88,96 @@
   border-radius: 25px;
   background-color: #1D1D1D;
 }
+.services-wrapper_items .d-flex .item-icon {
+  width: 70px;
+  max-width: 70px;
+  min-width: 70px;
+  height: 70px;
+}
 .services-wrapper_items .d-flex p {
   margin-bottom: 0;
   margin-top: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.services-wrapper_items .d-flex h4 {
+.services-wrapper_items .d-flex h5 {
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .services-wrapper_items .d-flex:not(:last-child) {
   margin-bottom: 25px;
 }
 
+.technologies-Wrapper {
+  padding: 150px 0;
+}
+.technologies-Wrapper .d-flex {
+  gap: 30px;
+  margin-top: 76px;
+}
+.technologies-Wrapper .title_2 {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.technologies-Wrapper .title_2 img {
+  right: 0;
+  bottom: 8px;
+}
+.technologies-Wrapper_items {
+  text-decoration: none;
+}
+.technologies-Wrapper_items img {
+  width: 100%;
+}
+.technologies-Wrapper_items h4, .technologies-Wrapper_items p {
+  color: #ffffff;
+}
+.technologies-Wrapper_items h4 {
+  margin-top: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.technologies-Wrapper_items p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.owl-carousel {
+  overflow: hidden; /* ✅ Prevent extra movement */
+}
+
+.owl-stage-outer {
+  overflow: hidden !important;
+}
+
+.owl-stage {
+  display: flex;
+  padding-right: 20px !important; /* ✅ Fix right padding */
+}
+
+.owl-item {
+  flex: 0 0 auto;
+  width: 25%; /* ✅ Ensures correct slide width */
+}
+
 body {
   font-family: "Nohemi";
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
 }
 
 .dark-wrapper {
@@ -108,13 +186,14 @@ body {
 }
 .dark-wrapper .dark-wrapper__bgvector {
   position: absolute;
-  top: 120px;
+  top: 135px;
   left: 0;
 }
 
 .w-full {
-  max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -123,20 +202,54 @@ body {
   padding: 0;
 }
 
-h2, div.title {
+h2, div.title_2 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 100px;
+  color: #ffffff;
+  font-family: "Nohemi";
+  letter-spacing: 0.03em;
+}
+
+h3, div.title_3 {
   font-size: 50px;
   font-weight: 300;
   line-height: 65px;
-  letter-spacing: 2px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   font-family: "Nohemi";
 }
 
 h4 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 47px;
+  letter-spacing: 0.03em;
+}
+
+h5 {
   font-size: 25px;
   font-family: "Nohemi";
   font-weight: 400;
   color: #ffffff;
+}
+
+.title-block {
+  position: relative;
+}
+.title-block .small-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+}
+.title-block .title_2 {
+  position: relative;
+  text-align: center;
+}
+.title-block .title_2 img {
+  position: absolute;
 }
 
 p.small-text {

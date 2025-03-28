@@ -1,0 +1,18 @@
+.owl-carousel {
+    overflow: hidden; /* ✅ Prevent extra movement */
+  }
+  
+  .owl-stage-outer {
+    overflow: hidden !important;
+  }
+  
+  .owl-stage {
+    display: flex;
+    padding-right: 20px !important; /* ✅ Fix right padding */
+  }
+  
+  .owl-item {
+    flex: 0 0 auto;
+    width: 25%; /* ✅ Ensures correct slide width */
+  }
+  
