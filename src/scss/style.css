@@ -64,6 +64,146 @@
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-contact {
+  background: linear-gradient(178.99deg, #101010 7.64%, #0033FF 51.1%, #101010 99.13%);
+  padding: 150px 0 21px;
+}
+.footer-contact h3 {
+  margin-bottom: 0;
+}
+.footer-contact .flex-head {
+  justify-content: space-between;
+}
+.footer-contact .footer-contact__items,
+.footer-contact .footer-contact__form {
+  min-width: calc(50% - 110px);
+  gap: 110px;
+}
+.footer-contact__content {
+  border-radius: 40px;
+  padding: 80px 0;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.footer-contact__items .flex-1 {
+  gap: 73px;
+}
+.footer-contact__items .flex-1 .col-1 {
+  width: 112px;
+}
+.footer-contact__items .flex-1 .col-2 {
+  min-width: 465px;
+}
+.footer-contact__address {
+  padding: 30px 0;
+  margin: 100px 0 0 60px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.footer-contact__address p {
+  margin-bottom: 0;
+}
+.footer-contact__address .flex-2 {
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  max-width: 82%;
+  margin-bottom: 30px;
+}
+.footer-contact__address .flex-2 p.small-text {
+  margin-top: 0;
+}
+.footer-contact__address .flex-3 {
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer-contact__address .flex-3 img {
+  width: 23px;
+}
+.footer-contact__address .flex-3 a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nohemi";
+  color: #ffffff;
+}
+.footer-contact__address p.small-text {
+  margin-top: 47px;
+}
+.footer-contact__form h6 {
+  margin-bottom: 15px;
+}
+.footer-contact__form p {
+  margin-bottom: 30px;
+}
+.footer-contact__form .form-control {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: "Nohemi";
+  letter-spacing: 0.03em;
+  padding: 20px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  background-color: #353535;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+.footer-contact__form textarea.form-control {
+  min-height: 160px;
+}
+.footer-contact__form .btn-blue {
+  margin-top: 5px;
+}
+.footer-contact .marquee-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contact .marquee-container .footer-textanimated {
+  padding: 40px 0;
+  font-size: 160px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  white-space: nowrap;
+  display: inline-block;
+  animation: marqueeAnimation 10s linear infinite;
+}
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(20%);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  35% {
+    transform: translateX(-20%);
+  }
+  60% {
+    transform: translateX(20%);
+  }
+  70% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
 .services-wrapper {
   padding: 40px 0;
 }
@@ -288,6 +428,10 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  transition: all 0.3s;
+}
+.hero-wrapper .hero-wrapper__content .talk-animation:hover {
+  transform: translateY(2px);
 }
 .hero-wrapper .hero-wrapper__content .talk-animation .typing-container {
   position: absolute;
@@ -425,6 +569,14 @@ h5 {
   color: #ffffff;
 }
 
+h6 {
+  font-size: 20px;
+  font-family: "Nohemi";
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
 .light-link {
   font-size: 14px;
   line-height: 20px;
@@ -468,6 +620,45 @@ p.small-text {
   font-family: "Nohemi";
   font-weight: 300;
   color: #ffffff;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* For better browser support */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.btn-blue {
+  padding: 22px 36px;
+  font-size: 15px;
+  font-family: "Nohemi";
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0033FF;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.btn-blue:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  background-color: #0033FF;
 }
 @keyframes animate-svg-stroke-1 {
   0% {
