@@ -38,17 +38,28 @@ document.addEventListener("DOMContentLoaded", () => {
 // Hero banner Chat animation 
 
 const typingContainer = document.querySelector(".typing-container");
-        let firstHover = true; 
-      
-        typingContainer.addEventListener("mouseenter", function () {
-          if (firstHover) {
-            this.classList.add("first-hover");
-            firstHover = false;
-          } else {
-            this.classList.add("instant-show");
-          }
-        });
-      
-        typingContainer.addEventListener("mouseleave", function () {
-          this.classList.remove("first-hover", "instant-show");
-        });
+const animationLink = document.querySelector(".animation-link"); 
+let firstHover = true; 
+
+typingContainer.addEventListener("mouseenter", function () {
+  if (firstHover) {
+    this.classList.add("first-hover");
+    firstHover = false;
+  } else {
+    this.classList.add("instant-show");
+  }
+});
+
+typingContainer.addEventListener("mouseleave", function () {
+  this.classList.remove("first-hover", "instant-show");
+});
+
+
+animationLink.addEventListener("mouseenter", function () {
+  typingContainer.classList.add("instant-show");
+});
+
+animationLink.addEventListener("mouseleave", function () {
+  typingContainer.classList.remove("instant-show");
+});
+
