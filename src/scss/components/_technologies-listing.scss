@@ -4,6 +4,7 @@
     .d-flex{
         gap: 30px;
         margin-top: 76px;
+        justify-content: center;
     }
 
     .title_2{
@@ -19,6 +20,7 @@
 
     &_items{
         text-decoration: none;
+        max-width: 380px;
 
         img{
             width: 100%;

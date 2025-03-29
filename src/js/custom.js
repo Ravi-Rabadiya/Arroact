@@ -33,3 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkIfInView();
 });
+
+
+// Hero banner Chat animation 
+
+const typingContainer = document.querySelector(".typing-container");
+        let firstHover = true; 
+      
+        typingContainer.addEventListener("mouseenter", function () {
+          if (firstHover) {
+            this.classList.add("first-hover");
+            firstHover = false;
+          } else {
+            this.classList.add("instant-show");
+          }
+        });
+      
+        typingContainer.addEventListener("mouseleave", function () {
+          this.classList.remove("first-hover", "instant-show");
+        });
