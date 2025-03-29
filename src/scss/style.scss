@@ -75,6 +75,14 @@ h5{
     color: $white;
 }
 
+h6{
+  font-size: 20px;
+  font-family: $font;
+    font-weight: 300;
+    color: $white;
+    letter-spacing: 0.03em;
+}
+
 .light-link{
   font-size: 14px;
   line-height: 20px;
@@ -123,6 +131,43 @@ p.small-text{
     font-weight: 300;
     color: $white;
 }
+
+
+input::placeholder, 
+textarea::placeholder {
+  color: $white !important;
+  opacity: 1 !important; 
+}
+
+/* For better browser support */
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder { 
+  color: $white !important;
+}
+
+input::-ms-input-placeholder, 
+textarea::-ms-input-placeholder { 
+  color: $white !important;
+}
+
+.btn-blue{
+  padding: 22px 36px;
+  font-size: 15px;
+  font-family: $font;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: $white;
+  background-color: $blue;
+  border-radius: 10px;
+  transition: all .3s;
+
+  &:hover{
+    transform: scale(1.05);
+    color: $white;
+  background-color: $blue;
+  }
+}
+
 
 
 //SVG animation code 

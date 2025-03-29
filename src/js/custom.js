@@ -63,3 +63,22 @@ animationLink.addEventListener("mouseleave", function () {
   typingContainer.classList.remove("instant-show");
 });
 
+
+
+
+// Add Bg 
+
+document.querySelectorAll("div[src], section[src]").forEach(element => {
+  const bgPath = element.getAttribute("src"); 
+
+  if (bgPath) {
+    element.style.backgroundImage = `url('${bgPath}')`;
+    element.style.backgroundSize = "cover";
+    element.style.backgroundPosition = "center";
+    element.style.backgroundRepeat = "no-repeat"; 
+    element.removeAttribute("src"); 
+  }
+});
+
+
+
