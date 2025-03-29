@@ -313,7 +313,7 @@
   background: white;
   border-radius: 50%;
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(35px);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 .hero-wrapper .hero-wrapper__content .talk-animation .typing-container.first-hover .dot:nth-child(1) {
@@ -334,11 +334,6 @@
   opacity: 1;
   transform: translateY(0);
   transition: none;
-}
-.hero-wrapper .hero-wrapper__content .talk-animation .typing-container:not(:hover) .dot {
-  opacity: 0;
-  transform: translateY(35px);
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
 .hero-wrapper .hero-wrapper__content .talk-animation .animation-link {
   font-size: 14px;
