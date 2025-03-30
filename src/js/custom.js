@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function startAnimation() {
         svgPath.style.opacity = "1";
-        svgPath.style.animation = "animate-svg-stroke-1 4s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both";
+        svgPath.style.animation = "animate-svg-stroke-1 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both";
         animationPlayed = true;
     }
 
@@ -80,5 +80,24 @@ document.querySelectorAll("div[src], section[src]").forEach(element => {
   }
 });
 
+
+// Owl slider 
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    margin: 20,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1, center: true },
+      600: { items: 2 },
+      1000: { items: 3, stagePadding: 180 }
+    }
+  });
+});
 
 
