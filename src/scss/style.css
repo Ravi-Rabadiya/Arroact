@@ -317,7 +317,7 @@ footer .footer-contact .marquee-container .footer-textanimated {
 @media (max-width: 767px) {
   footer .footer-contact .marquee-container .footer-textanimated {
     font-size: 75px;
-    padding: 20px 300px;
+    padding: 20px 280px;
   }
 }
 @keyframes marqueeAnimation {
