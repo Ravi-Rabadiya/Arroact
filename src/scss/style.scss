@@ -233,6 +233,10 @@ textarea::-ms-input-placeholder {
   border-radius: 10px;
   transition: all .3s;
 
+  @media (max-width:767px) {
+    padding: 15px 30px;
+  }
+
   &:hover{
     transform: scale(1.05);
     color: $white;
@@ -266,6 +270,10 @@ textarea::-ms-input-placeholder {
     background-color: $white; 
     transition: transform 0.3s linear;
     transform: translateX(-100%);
+
+    @media (max-width:1200px) {
+      display: none;
+    }
   }
 
   &:hover::after {

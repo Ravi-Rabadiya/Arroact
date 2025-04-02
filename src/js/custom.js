@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function startAnimation() {
         svgPath.style.opacity = "1";
-        svgPath.style.animation = "animate-svg-stroke-1 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both";
+        svgPath.style.animation = "animate-svg-stroke-1 12s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both";
         animationPlayed = true;
     }
 
@@ -94,8 +94,9 @@ $(document).ready(function(){
     autoplayHoverPause: true,
     responsive: {
       0: { items: 1, center: true },
-      600: { items: 2 },
-      1000: { items: 3, stagePadding: 180 }
+      576: { items: 2 },
+      1200: { items: 3 },
+      1300: { items: 3, stagePadding: 180 }
     }
   });
 });
