@@ -21,6 +21,7 @@ img{
 
 .dark-wrapper{
     background-color: $black_1;
+    position: relative;
 
     .dark-wrapper__bgvector{
         position: absolute;
@@ -237,10 +238,31 @@ textarea::-ms-input-placeholder {
     padding: 15px 30px;
   }
 
-  &:hover{
+  &:hover, &:active{
     transform: scale(1.05);
     color: $white;
   background-color: $blue;
+  }
+}
+
+.btn-light{
+  min-height: 55px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: $white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: $font;
+  border: 1px solid $blue;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all .3s;
+
+  &:hover{
+    background-color: $blue;
   }
 }
 
