@@ -102,3 +102,42 @@ $(document).ready(function(){
 });
 
 
+// Header menu 
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 992) {  // Apply only if screen is 992px or larger
+      var dropdowns = document.querySelectorAll(".dropdown");
+
+      dropdowns.forEach(function (dropdown) {
+          let toggle = dropdown.querySelector(".dropdown-toggle");
+          let menu = dropdown.querySelector(".dropdown-menu");
+
+          toggle.addEventListener("click", function (event) {
+              event.preventDefault();
+              let isOpen = menu.classList.contains("show");
+
+              // Close all open dropdowns
+              document.querySelectorAll(".dropdown-menu.show").forEach(function (openMenu) {
+                  openMenu.classList.remove("show");
+              });
+
+              // Toggle clicked dropdown
+              if (!isOpen) {
+                  menu.classList.add("show");
+              }
+          });
+
+          // Close dropdown when clicking outside
+          document.addEventListener("click", function (e) {
+              if (!dropdown.contains(e.target)) {
+                  menu.classList.remove("show");
+              }
+          });
+      });
+  }
+});
+
+
+
+
+
