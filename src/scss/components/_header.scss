@@ -319,6 +319,8 @@ header{
           background-color: $white;
           position: relative;
           transition: all 0.3s ease-in-out;
+          background-image: none;
+          border-radius: 15px;
       
           &::before,
           &::after {
@@ -329,6 +331,7 @@ header{
             background-color: $white;
             transition: all 0.3s ease-in-out;
             left: 0;
+            border-radius: 15px;
           }
       
           &::before {
